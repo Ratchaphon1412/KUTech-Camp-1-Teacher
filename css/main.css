@@ -1,0 +1,24 @@
+/* selector */
+body{
+    background-color:black;
+}
+
+p{
+    color:white;
+}
+/*  all selector */
+/* * {
+    border: 3px solid greenyellow;
+} */
+
+/* class */
+.title{
+    color: pink;
+    text-align:center;
+}
+
+/* id */
+#message{
+    color: gray;
+    text-align: right;
+}

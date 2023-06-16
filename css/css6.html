@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 6</title>
+
+    <style>
+        div{
+            margin-bottom: 100px;
+        }
+        div.static {
+            position: static;
+            border: 3px solid #73AD21;
+        }
+        div.relative{
+            position: relative;
+            left: 30px;
+            border: 3px solid #73AD21;
+        }
+        div.fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid #73AD21;
+            margin-bottom: 0 !important;
+        }
+        div.absolute {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid #73AD21;
+        }
+        div.sticky{
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: #cae8ca;
+            border: 2px solid #73AD21;
+        }
+
+        button{
+            color:azure;
+            background-color:black;
+        }
+        button:hover{
+            background-color: #73AD21;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- position -->
+    <div class="static">
+        This div element has position: static;
+    </div>
+
+    <div class="relative">
+        This div element has position: relative;
+    </div>
+
+    <div class="fixed">
+        This div element has position: fixed;
+    </div>
+
+    <div style="position: relative; width:400px; height:200px; border:3px solid #73AD21;">
+        This is cover absolute
+        <div class="absolute">
+            This div element has position: absolute;
+        </div>
+    </div>
+
+    <div class="sticky">This div element has position: sticky</div>
+    
+    <div style="padding-bottom:2000px;"></div>
+
+
+    <!-- hover -->
+    <button>This is a button</button>
+</body>
+</html>

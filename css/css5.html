@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 5</title>
+
+    <style>
+        div{
+            margin-top: 10px;
+            background-color: black; 
+            color:white; 
+            width:100px; 
+            height:100px; 
+            border: 1px solid greenyellow;
+        }
+        span{
+            margin-top: 10px;
+            background-color: black; 
+            color:white; 
+            width:100px; 
+            height:100px; 
+            border: 1px solid greenyellow;
+        }
+        /* div{
+            display:inline; 
+            background-color:black; 
+            color:white; 
+            width:100px; 
+            height:100px; 
+            border: 1px solid greenyellow;
+        } */
+        .order{
+            width: 400px;
+            height: 500px;
+            display: flex;
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap; */ 
+            
+            /* https://www.w3schools.com/cssref/css3_pr_justify-content.php */
+            /* justify-content: center; */
+            
+            /* https://www.w3schools.com/cssref/css3_pr_align-items.php */
+            /* align-items: center; */
+        }
+        .order div{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- display inline -->
+    <p>this is a inline</p>
+    <div style="display:inline;">
+        i'm div but no space
+    </div>
+    <div style="display:inline;">
+        i'm div but no space
+    </div>
+
+    <!-- display block -->
+    <p>this is a block</p>
+    <span style="display:block;">
+        i'm span but space
+    </span>
+    <span style="display:block;">
+        i'm span but space
+    </span>
+    
+    <!-- display inline-block -->
+    <p>this is a inline-block</p>
+    <div style="display:inline-block;">
+        i'm div but inline-block
+    </div>
+    <div style="display:inline-block;">
+        i'm div but inline-block
+    </div>
+    
+    <!-- display flex -->
+    <p> this is a flex </p>
+    <div class="order">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <!-- <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div> -->
+    </div>
+
+</body>
+</html>
